@@ -5,8 +5,13 @@ var Cart = require('../models/cart');
 var Product = require('../models/product');
 var Order = require('../models/order');
 
+router.get('/', function(req, res){
+ res.sendFile(__dirname + './public/index.html');
+});
+
+
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/home', function(req, res, next) {
   var successMsg = req.flash('success')[0];
   Product.find(function(err, docs) {
     var productChunks = [];
@@ -29,12 +34,12 @@ router.get('/add-to-cart/:id', function(req, res, next) {
 
   Product.findById(productId, function(err, product) {
     if (err) {
-      return res.redirect('/');
+      return res.redirect('/home');
     }
     cart.add(product, product.id);
     req.session.cart = cart;
     console.log(req.session.cart);
-    res.redirect('/');
+    res.redirect('/home');
   });
 });
 
@@ -106,7 +111,7 @@ router.post('/checkout', isLoggedIn, function(req, res, next) {
       order.save(function(err, result) {
         req.flash('success', 'Successfully bought product!');
         req.session.cart = null;
-        res.redirect('/');
+        res.redirect('/home');
       });
     }
   );

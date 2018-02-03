@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<!-- This Website is developed by Tarachand Prajapati - CS - NITRR - RollNo-15115079-Contact-+917987773936 -->
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<title>AgriCart</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="Pictures/logo.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="The Campus Ambassador system is an integral part of ROBOTiX_NITRR Outreach program and also helps ROBOTiX_club identify talented students from various colleges."/>
+	<link rel="canonical" href="index.html"/>
+
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/loader-style.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/campus-ambassador.min.css"/>
+
+		<link rel="shortcut icon" href="smalllogo.png">
+    <script src="../apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="565959197323-btfoou2ur9gnf3slqpna0d6kfghc4ni4.apps.googleusercontent.com">
+	
+	<script type="text/javascript" src="../code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/loader-effect.min.js"></script>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+
+    <script type="text/javascript" src="js/campus-ambassador.min.js"></script>
+    <script type="text/javascript" src="js/jquery.numeric.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/formValidate.min.js"></script>
+    <script type="application/ld+json">
+    [
+	{
+	  "@context": "http://schema.org/",
+	  "@type": "Person",
+	  "name": "Akshay Laila",
+	  "telephone": "+917760596626",
+	  "email": "laila.akshay@gmail.com",
+	  "image": "http://incident.co.in/Pictures/Contacts/Akshay_Laila.jpg"
+	},
+	{
+	  "@context": "http://schema.org/",
+	  "@type": "Person",
+	  "name": "vaishusulaya@gmail.com",
+	  "telephone": "+918197595796",
+	  "email": "vaishusulaya@gmail.com",
+	  "image": "http://incident.co.in/Pictures/Contacts/Vaishnavi.jpg"
+	},
+	{
+	  "@context": "http://schema.org/",
+	  "@type": "Person",
+	  "name": "Prajwal K",
+	  "telephone": "+919449244208",
+	  "email": "prajwalk3795@gmail.com",
+	  "image": "http://incident.co.in/Pictures/Contacts/Prajwal.jpg"
+	}
+	]
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88839712-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+[class^="entypo-"]:before {
+	font-family: 'entypo', sans-serif;
+}
+body {
+  background: url(http://i43.tinypic.com/vewt4k.png);
+}
+
+
+#social-sidebar {
+	left: 0;
+	position: fixed;
+	top: 25%;
+}
+
+#social-sidebar li:first-child a { border-top-right-radius: 5px; }
+#social-sidebar li:last-child a { border-bottom-right-radius: 5px; }
+
+#social-sidebar a {
+	background: rgba(0, 0, 0, .7);
+	color: #fff;
+  text-decoration: none;
+	display: block;
+	height: 50px;
+	width: 50px;  
+	font-size: 24px;
+	line-height: 50px;
+	position: relative;
+	text-align: center;
+  cursor: pointer;
+}
+
+#social-sidebar a:hover span {
+	left: 120%;
+	opacity: 1;
+}
+
+#social-sidebar a span {
+  font: 12px "Open Sans", sans-serif;
+  text-transform: uppercase;
+	border-radius: 3px;
+	line-height: 24px;
+	left: -100%;
+	margin-top: -16px;
+	opacity: 0;
+	padding: 4px 8px;
+	position: absolute;
+	transition: opacity .3s, left .4s;
+	top: 50%;
+	z-index: -1;
+}
+
+#social-sidebar a span:before {
+	content: "";
+	display: block;
+	height: 8px;
+  width: 8px;
+	left: -4px;
+	margin-top: -4px;
+	position: absolute;
+	top: 50%;
+	transform: rotate(45deg);
+}
+
+#social-sidebar a[class*="twitter"]:hover,
+#social-sidebar a[class*="twitter"] span,
+#social-sidebar a[class*="twitter"] span:before {background: #00aced;}
+
+#social-sidebar a[class*="facebook"]:hover,
+#social-sidebar a[class*="facebook"] span,
+#social-sidebar a[class*="facebook"] span:before {background: #3B5998;}
+
+#social-sidebar a[class*="gplus"]:hover,
+#social-sidebar a[class*="gplus"] span,
+#social-sidebar a[class*="gplus"] span:before {background: #E34429;}
+
+#social-sidebar a[class*="dribbble"]:hover,
+#social-sidebar a[class*="dribbble"] span,
+#social-sidebar a[class*="dribbble"] span:before {background: #ea4c89;}
+
+#social-sidebar a[class*="dropbox"]:hover,
+#social-sidebar a[class*="dropbox"] span,
+#social-sidebar a[class*="dropbox"] span:before {background: #8DC5F2;}
+
+#social-sidebar a[class*="github"]:hover,
+#social-sidebar a[class*="github"] span,
+#social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
+
+#social-sidebar a[class*="evernote"]:hover,
+#social-sidebar a[class*="evernote"] span,
+#social-sidebar a[class*="evernote"] span:before {background: #6BB130;}
+</style>
+</head>
+
+<!-- This Website is developed by Tarachand Prajapati - CS - NITRR - RollNo-15115079-Contact-+917987773936 -->
+
+<body>
+<div class="loader" data-progress="0">
+	<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg" >
+		<circle class="circle" cx="245" cy="250" r="220"/>
+
+		<g class="icon">
+			<circle cx="245" cy="116" r="29" />
+			<path d="M248,158 Q274,155 269,180 L258,200
+					 Q215,275 277,322 C320,355 277,383 277,383
+					 Q240,405 210,377 Q192,355 207,305
+					 Q230,250 217,210 Q210,170 248,158">
+			</path>
+		</g>
+	</svg>
+	<p class="notice">Use Chrome, Firefox or Safari for better experience</p>
+</div>
+<div class="main">
+	<div class="nav-div">
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#main" class="brand-logo">NACOF</a>
+				<a data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down ">
+					<li><a href="start.html">Home</a></li>
+					<li><a href="#about">NEWS</a></li>
+					<li><a href="#why-ca">Why</a></li>
+					<li><a href="#duties">Duties</a></li>
+					<li><a href="#contacts">Contact</a></li>
+					<li><a class="modal-trigger" href="#register">Register</a></li>
+				</ul>
+				<ul id="nav-mobile" class="side-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#about">NEWS</a></li>
+					<li><a href="#why-ca">Why</a></li>
+					<li><a href="#duties">Duties</a></li>
+					<li><a href="#contacts">Contact</a></li>
+					<li><a class="modal-trigger" href="#register">Register</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="ca-background" id="main">
+		<img alt="Backround Image of the page" src="Pictures/CA-background.jpg"/>
+		<div class="text-wrapper">
+			<div class="inner-wrapper">
+				<h1>NACOF AGRICULTURE NEWS</h1>
+				<p class="side-tag"><span>LEAD</span> your production to the <span>PARTY</span></p>
+			</div>
+		</div>
+	</div>
+	<div class="about" id="about">
+		<div class="container">
+			<div class="about-main">
+			
+			<ul id="social-sidebar">
+  <li>
+    <a href="https://mobile.twitter.com/i/start/interests" class="entypo-twitter"></a>
+  </li>
+  <li>
+    <a href="https://www.facebook.com/nitrrobots16/?hc_ref=SEARCH"  class="entypo-facebook"></a>
+  </li>
+  <li>
+    <a href="https://plus.google.com/u/0/" class="entypo-gplus"></a>
+  </li>
+    <a href="https://www.facebook.com/nitrrobots16/?hc_ref=SEARCH"  class="entypo-github"></a>
+  </li>
+  <li>
+    <a href="https://www.facebook.com/nitrrobots16/?hc_ref=SEARCH"  class="entypo-evernote"></a>
+  </li>
+  </ul>
+			
+				<h1>NEWS</h1>
+				<p>
+					ROBOTiX CLUB is a ROBOTICS CLUB of NIT Raipur made to enhance and enrich Robotics skills in people 
+		   having interest in Robotics.
+		   Students from numerous colleges throng to 
+		    to participate in a plethora of events as well as to witness spectacular shows. 
+		    In a nutshell, ROBOTiX CLUB plays host to a party you would 
+			definitely not want to miss out on.
+				</p>
+				<p>
+					From bird couriers to social networking, humanity has always been trying to spread messages across distances. 
+					ROBOTiX_club believes dissipating information is a vital aspect for an organization to thrive. 
+					The CA system is an integral part of Inci's Outreach program and also helps Inci identify talented students from colleges.
+					 Be a Campus Ambassador and be a part of the culture of NIT Raipur.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="why-ca" id="why-ca">
+		<h1>Why NACOF News</h1>
+		<div class="content">
+			<div  class="ca-card">
+			
+			<img   src="Pictures/backgrounds/bestfest.png" class="bg-img">
+				Opportunity to work for Central India's largest ROBOTiX_club NIT Raipur.
+			</div>
+			<div alt="An image depicting increase of network among students" class="ca-card">
+				<img src="Pictures/backgrounds/network.png" class="bg-img">
+				Regular updates and technical knowledge related to robotics.
+			</div>
+			<div alt="An image depicting increase of Management skills" class="ca-card">
+				<img src="Pictures/backgrounds/organize.png" class="bg-img">
+				Boost up public relatioships and communication skills enriching overall personality.
+				Organising prelims in your college will help in developing manegerial skills and leadership quality.
+			</div>
+			<div alt="An image depicting Prizes" class="ca-card">
+				<img src="Pictures/backgrounds/trophy.png" class="bg-img">
+				Conducting workshops in your college in collaboration with ROBOTiX Club  of NIT Raipur.
+			</div>
+			<div alt="An image depicting Certificates" class="ca-card">
+				<img src="Pictures/backgrounds/certificate.png" class="bg-img">
+				Obtain a certificate of appreciation from ROBOTiX_club NIT Raipur.
+			</div>
+		</div>
+	</div>
+	<div class="inci-logo">
+		<!--<img  src="Pictures/logo.svg">-->
+	</div>
+	<div id="duties">
+		<div class="container">
+			<div class="duties-main">
+				<h1>Duties</h1>
+				<div class="duties-list">
+					<p class="duties-list-item active">Publicise on Social Media</p>
+					<p class="duties-list-item">Act as an Intermediate</p>
+					<p class="duties-list-item">Analyse the Buzz</p>
+				</div>
+				<div class="duties-detail">
+					<p class="active">
+						Publicise ROBOTiX_club’s events through your social media accounts so as to reach out to students in your college
+					</p>
+					<p>
+						Act as a link between your college and NIT Raipur. You will also be the single point of contact for ROBOTiX_club in your college
+					</p>
+					<p>
+						Keep us updated about your students’ strengths, interests and excitement about our events
+					</p>
+				</div>
+				<div class="duties-links">
+					<p> 
+						<a class="modal-trigger" href="#full-list">Full List of Duties</a>
+					</p>
+					<p>
+						<a class="modal-trigger" href="https://docs.google.com/forms/d/1y_mZLY-UH8o8OoWUd7ySUtys9i8H_rdM_rWnR85GFxE/edit?usp=sharing">Register</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="contacts">
+		<div class="contact-main">
+			<h1>Contact Us</h1>
+			<div class="row">
+				<div class="col s12 m4 contact">
+					<div class="contact-img">
+						<img alt="An image of Akshay Laila" src="Pictures/Contacts/organiser/"/>
+						<div class="social-wrapper">
+							<div class="fb-holder">
+								<a href="https://www.facebook.com/ankit.pawar.750" target="_blank"></a>
+							</div>
+							<div class="email-holder">
+								<a href="mailto:nitrrobots16@gmail.com"></a>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="contact-detail">
+						<h4>Harshit Jain</h4>
+						<p><a href="tel:+919406325137">+919406325137</a></p>
+					</div>
+				</div>
+				<div class="col s12 m4 contact">
+					<div class="contact-img">
+						<img alt="An image of Vaishnavi Sulaya" src="Pictures/Contacts/p15.jpg"/>
+						<div class="social-wrapper">
+							<div class="fb-holder">
+								<a href="https://www.facebook.com/chintu.prajapati.33" target="_blank"></a>
+							</div>
+							<div class="email-holder">
+								<a href="mailto:nitrrobots16@gmail.com"></a>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="contact-detail">
+						<h4>Tarachandra</h4>
+						<p><a href="tel:+919406325137" >+917987333065</a></p>
+					</div>
+				</div>
+				<div class="col s12 m4 contact">
+					<div class="contact-img">
+						<img alt="An image of Prajwal K" src="Pictures/Contacts/"/>
+						<div class="social-wrapper">
+							<div class="fb-holder">
+								<a href="https://www.facebook.com/pooja.kota.986" target="_blank"></a>
+							</div>
+							<div class="email-holder">
+								<a href="mailto:nitrrobots16@gmail.com"></a>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="contact-detail">
+						<h4>Ankit Sonkusare</h4>
+						<p><a href="tel:+918966021705">+918966021705</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="full-list">
+		<div class="modal-content">
+			<div class="content">
+				<h3>Duties</h3>
+				<ul>
+				    <li>
+					  Verbal publicity of events.
+					  </li>
+					  <li>
+					  Spreading information about events/workshops/competitions through mail and other common communication mediums.
+					  </li>
+					  <li>
+					  Putting up posters on the notice boards of college in hostel and canteens.
+					  </li>
+					  Encouraging and facilitating participation from your college.
+					<li>
+					<li>
+					  Organising preliminary rounds of certain competitions (Quizes, etc).
+					  </li>
+						Publicise ROBOTiX_club’s events through your social media accounts so as to reach out to students in your college.
+					</li>
+					<li>
+						Act as a link between your college and NIT Raipur. You will also be the single point of contact for ROBOTiX_club in your college.
+					</li>
+					<li>
+						Keep us updated about your students’ strengths, interests and excitement about our events.
+					</li>
+					<li>
+						Lead us to the right contact in your College. Share updates of events ASAP.
+					</li>
+				</ul>
+			</div>
+		</div>
+		<a class="modal-close" href="#full-list"><i class="material-icons">close</i></a>
+	</div>
+
+	<div class="modal modal-fixed-footer" id="register">
+		<div class="modal-content">
+			<div class="content">
+				<h4>Terms &amp; Conditions</h4>
+				<ul>
+					<!--<li>Prizes will be awarded to the Campus Ambassador only after registration of the participants gets finalized prior to the start of the fest.</li>
+					<li>Certificate for being a Campus Ambassador will be provided if and only if he/she does the allotted work correctly and ensures participation from his/her respective college.</li>
+					<li>Campus Ambassadors would be made part of the organization committee of the fest only if they are associated with Incident throughout the promotion of the fest.</li>
+					<li>Any change in the reward scheme before or after the selection of the Campus Ambassador is under the sole discretion of Team ROBOTiX_club NIT Raipur. However, the changes would be notified to the Campus Ambassador at the earliest.</li>-->
+				</ul>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<div class="accept-field">
+				<input type="checkbox" id="accept"/>
+				<label for="accept">I Accept</label>
+			</div>
+			<p>Sign In</p>
+			<a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=1588149221482792&amp;state=d4cb4b8183e11f52b5990b54209905d8&amp;response_type=code&amp;sdk=php-sdk-5.0.0&amp;redirect_uri=http%3A%2F%2Fincident.co.in%2Fcollect_user_data_facebook.php&amp;scope=email" class="btn waves-effect disabled white-text" id="register-fb-btn">Facebook</a>
+			<a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=http%3A%2F%2Fincident.co.in%2Fcollect_user_data_google.php&amp;client_id=565959197323-3ev37ibcs3mtol86v41v5r69kbsns2n2.apps.googleusercontent.com&amp;scope=email+profile&amp;access_type=online&amp;approval_prompt=auto" class="btn waves-effect disabled white-text" id="register-ggl-btn">Google+</a>
+		</div>
+		<a class="modal-close" href="#register"><i class="material-icons">close</i></a>
+	</div>	
+<!-- This Website is developed by Tarachand Prajapati - CS - NITRR - RollNo-15115079-Contact-+917987773936 -->
+	</div>
+</body>
+
+</html>

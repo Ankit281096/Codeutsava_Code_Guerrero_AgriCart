@@ -1,33 +1,29 @@
-Stripe.setPublishableKey('pk_test_NNKautjJjJKsudHMMnZcUtuo');
+Stripe.setPublishableKey('pk_test_TzEMBmBzS1xYkAwsVUNrZFwu');
 
-var $form = $('#checkout-form');
+var $form=$('#checkout-form');
 
-$form.submit(function(event) {
+$form.submit(function(event){
   $('#charge-error').addClass('hidden');
-  $form.find('button').prop('disabled', true);
-  Stripe.card.createToken(
-    {
-      number: $('#card-number').val(),
-      cvc: $('#card-cvc').val(),
-      exp_month: $('#card-expiry-month').val(),
-      exp_year: $('#card-expiry-year').val(),
-      name: $('#card-name').val()
-    },
-    stripeResponseHandler
-  );
-  return false;
+  $form.find('button').prop('disabled',true);
+  Stripe.card.createToken({
+  number: $('#card-number').val(),
+  cvc: $('#card-cvc').val(),
+  exp_month: $('#card-expiry-month').val(),
+  exp_year: $('#card-expiry-year').val(),
+  name:$('#card-name').val(),
+}, stripeResponseHandler);
+ return false;
 });
 
-function stripeResponseHandler(status, response) {
-  if (response.error) {
-    // Problem!
+function stripeResponseHandler(status,response){
+  if (response.error) { // Problem!
 
     // Show the errors on the form
     $('#charge-error').text(response.error.message);
     $('#charge-error').removeClass('hidden');
     $form.find('button').prop('disabled', false); // Re-enable submission
-  } else {
-    // Token was created!
+
+  } else { // Token was created!
 
     // Get the token ID:
     var token = response.id;
@@ -37,5 +33,6 @@ function stripeResponseHandler(status, response) {
 
     // Submit the form:
     $form.get(0).submit();
+
   }
 }

@@ -1,0 +1,83 @@
+@import "compass/css3";
+
+@import "compass/utilities/general/clearfix";
+
+/* Social Icons Config */
+$SocialIconSize: 64px;
+
+/* Animation Time */
+$AnimationTime: .2s;
+
+/* General Colors */
+$White: rgb(255,255,255);
+
+/* Social Site Colors */
+$Behance: rgb(23,105,255);
+$Codepen: rgb(0,0,0);
+$Facebook: rgb(59,89,152);
+$GooglePlus: rgb(221,75,57);
+$LinkedIn: rgb(29,135,190);
+$Mail: rgb(226,78,67);
+$Pinterest: rgb(204,34,41);
+$Twitter: rgb(85,172,238);
+$YouTube: rgb(229,44,40);
+
+body { 
+  background: rgb(40,40,40); }
+
+.socialIcon {
+	height: $SocialIconSize;
+	width: $SocialIconSize; }
+
+.wrapper {
+  text-align: center; }
+
+.socialLinks
+{
+  @include clearfix();
+  display: inline-block;
+  margin: 80px 0 0 0;
+	a {
+		display: block;
+		background: transparent;
+		border: 1px solid $White;
+		float: left;
+		height: $SocialIconSize*1.6;
+		margin: 15px;
+		position: relative;
+		@include transition(background $AnimationTime/2 linear, border $AnimationTime/2 linear);
+		width: $SocialIconSize*1.6;
+		.socialIcon {
+			left: 50%;
+			margin: (-$SocialIconSize/2) 0 0 (-$SocialIconSize/2);
+			position: absolute;
+			top: 50%; }
+	}
+  .behance:hover {
+		background: $Behance;
+		border-color: $Behance; }
+  .codepen:hover {
+		background: $Codepen;
+		border-color: $Codepen; }
+	.facebook:hover {
+		background: $Facebook;
+		border-color: $Facebook; }
+	.googleplus:hover {
+		background: $GooglePlus;
+		border-color: $GooglePlus; }
+	.linkedin:hover {
+		background: $LinkedIn;
+		border-color: $LinkedIn; }
+  .mail:hover {
+		background: $Mail;
+		border-color: $Mail; }
+  .pinterest:hover {
+		background: $Pinterest;
+		border-color: $Pinterest; }
+	.twitter:hover {
+		background: $Twitter;
+		border-color: $Twitter; }
+  .youtube:hover {
+		background: $YouTube;
+		border-color: $YouTube; }
+}
