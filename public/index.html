@@ -3,6 +3,10 @@
 
   <head>
 
+    	<link rel="stylesheet" href="css/reset_testimonial.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style_testimonial.css"> <!-- Resource style -->
+	<script src="js/modernizr_testimonial.js"></script> <!-- Modernizr -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -27,10 +31,24 @@
     }
 
     </style>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'en',
+      includedLanguages: 'en,hi,as,bn,gu,kn,ks,ml,mr,or,sa,ta,te',
+      layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+    },
+    'google_translate_element'
+  );
+}
+</script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   </head>
 
-  <body>
+ <body style="background-color:#e6e6e6; ">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -45,11 +63,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <div id="google_translate_element" style="color:white; padding:8px;"></div>
+            </li>
             <li class="nav-item active">
               <a class="nav-link" href="/">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="/home">Our Cart</a>
             </li>
@@ -60,10 +82,10 @@
               <a class="nav-link" href="discuss.html">Forum</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="news/news.html">News</a>
+              <a class="nav-link" href="news.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="ecology/index.html">Blogs</a>
+              <a class="nav-link" href="calculator.html">Calculator</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -74,7 +96,7 @@
     </nav>
 
     <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top:100px;">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -120,11 +142,14 @@
     text-justify: inter-word;">National Federation of Farmers’ Procurement, Processing and Retailing Cooperatives of India Ltd, (NACOF) has been established under the Multi-State Cooperative Societies Act 2002 and registered on 4th November 2009 by the Joint Secretary & Central Registrar, Cooperative Societies in the Ministry of Agriculture, Govt. of India at Registration No. MSCS/CR/320/2009. The membership of NACOF is 72 comprising of the State Level Federations, Distt Level Federations and large size/primary level societies from States and Uts of India i.e. the States of Delhi, Uttar Pradesh, Madhya Pradesh, Bihar, Maharashtra, West Bengal, Chhattisgarh, Uttarakhand, Odisha, Rajasthan, Jharkhand, Himachal Pradesh, Andhra Pradesh, Gujarat, Karnataka, Kerala, Punjab, Arunachal Pradesh, Jammu & Kashmir, Assam, Manipur, and Chandigarh. Copies  of the registration certificates are appended.</p>
       </div>
     </section>
-<hr style="width:100%; background-color:black;height:2px;">
+<hr style="width:100%; background-color:black;">
 <section class="py-5">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-md-6" style="padding:10px;margin-left:10px;">
+	<div class="col-sm-6 col-md-6">
+         <img src="images/organic_farming.jpg" class="img-rounded" style="width:600px;height:400px; ">
+      </div>
+      <div class="col-sm-6 col-md-6" >
         <h1>Organic Farming</h1><br>
         <p style="font-size:20px;font-family: 'Roboto', sans-serif;   text-align: justify;
     text-justify: inter-word;">
@@ -132,12 +157,62 @@
         </p>
         <a style="font-size:24px;" href="https://www.conserve-energy-future.com/organic-farming-benefits.php"><strong >For more details visit</strong></a>
       </div>
-      <div class="col-sm-4 col-md-4">
-         <img src="images/organic_farming.jpg" class="img-rounded" style="width:600px;height:400px; ">
-      </div>
-     </div>
 
-  </div>
+     </div>
+ </div>
+ <br><br><br>
+ <hr style="width:100%; background-color:black;">
+
+ <div class="cd-testimonials-wrapper cd-container">
+	<ul class="cd-testimonials">
+		<li>
+			<p>A Farmer has to be an optimist or he wouldn't still be a farmer.</p>
+			<div class="cd-author">
+				<img src="img/avatar-1.jpg" alt="Author image">
+				<ul class="cd-author-info">
+					<li>Will Rodgers</li>
+					<li>CEO, AmberCreative</li>
+				</ul>
+			</div>
+		</li>
+
+		<li>
+			<p>Farmers dont just work till the sun goes down,they work till the job gets done.</p>
+			<div class="cd-author">
+				<img src="img/avatar-2.jpg" alt="Author image">
+				<ul class="cd-author-info">
+					<li>William Shakespeare</li>
+					<li>Great Writer</li>
+				</ul>
+			</div>
+		</li>
+
+		<li>
+			<p>Agriculture is our wisest pursuit,because it will in the end contribute most to real wealth,good morals and happiness.</p>
+			<div class="cd-author">
+				<img src="img/avatar-3.jpg" alt="Author image">
+				<ul class="cd-author-info">
+					<li>Thomas Jefferson</li>
+					<li>Writer,England</li>
+				</ul>
+			</div>
+		</li>
+
+	</ul> <!-- cd-testimonials -->
+
+
+</div> <!-- cd-testimonials-wrapper -->
+
+
+
+	<!-- cd-testimonials-all-wrapper -->
+
+
+</div> <!-- cd-testimonials-all -->
+<script src="js/jquery-2.1.1_testimonial.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/main_testimonial.js"></script> <!-- Resource jQuery -->
 
 
 

@@ -39,3 +39,15 @@ div#carousel ~ span {
   border-bottom: none; 
   line-height: 0; }
 div#carousel ~ span:hover { color: #888; cursor: pointer; }
+.output {
+  font-weight:bold;
+}
+#payment {
+  text-decoration:underline;
+}
+#graph {
+  border:solid black 1px;
+}
+th, td {
+  vertical-align: top;
+}

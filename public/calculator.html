@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AgriCart | NACOF</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/full-slider.css" rel="stylesheet">
+    <script src="js/script_calc.js"></script>
+    <script type="text/javascript">
+  	function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,as,bn,gu,kn,ks,ml,mr,or,sa,ta,te',
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+      },
+      'google_translate_element'
+    );
+  }
+  </script>
+
+  	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </head>
+
+  <body style="background-color:#e6e6e6;">
+
+       <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <!-- Logo -->
+                <div class="logo">
+                    <a href="#"><img style="margin-left: 0px;" src="contact_pictures/smalllogo.png" height="90"></a>
+                 </div>
+        <a class="navbar-brand" href="#">AgriCart | NACOF</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <div id="google_translate_element" style="color:white; padding:8px;"></div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/home">Our Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index_service.html">Schemes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="discuss.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="calculator.html">Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Page Content -->
+    <section class="py-5" style="margin-top:80px;"" >
+      <div class="container">
+        <h1>Agriculture support by NACOF Calculator</h1>
+        <p>We are here to help our farmers
+          <code>Anytime</code>
+          .</p>
+      </div>
+    </section>
+
+    <div class="col-xs-12 col-md-12" ><li> <div>
+      <title> JavaScript Loan Calculator </title>
+<table class="table table-striped">
+  <tr><th style="background-color:lightgreen">Enter Loan Data:</th>
+    <td></td>
+  <th style="background-color:lightgreen">Loan Balance, Cumulative Equity, and Interest Payments</th></tr>
+  <tr><td>Amount of the loan (Rs):</td>
+  <td><input id="amount" onchange="calculate();"></td>
+  <td rowspan=8>
+    <canvas id="graph" width="400" height="250"></canvas></td></tr>
+  <tr><td>Annual interest (%):</td>
+    <td><input id="apr" onchange="calculate();"></td></tr>
+  <tr><td>Repayment period (years):</td>
+    <td><input id="years" onchange="calculate();"></td>
+  <tr><td>Subsidy :</td>
+    <td><input id="zipcode" onchange="calculate();"></td>
+  <tr><th>Approximate Payments:</th>
+    <td><button onclick="calculate();">Calculate</button></td></tr>
+  <tr><td>Monthly payment:</td>
+    <td>Rs<span class="output" id="payment"></span></td></tr>
+  <tr><td>Total payment:</td>
+    <td>Rs<span class="output" id="total"></span></td></tr>
+  <tr><td>Total interest:</td>
+    <td>Rs<span class="output" id="totalinterest"></span></td></tr>
+  <tr><th>Sponsors:</th><td colspan=2>
+    Apply for your loan with one of these fine lenders:
+      <div id="lenders"></div></td></tr>
+  </table>
+    </div></li></div>
+    <!--<div>
+      <title> JavaScript Loan Calculator </title>
+<table>
+  <tr><th>Enter Loan Data:</th>
+    <td></td>
+  <th>Loan Balance, Cumulative Equity, and Interest Payments</th></tr>
+  <tr><td>Amount of the loan (Rs):</td>
+  <td><input id="amount" onchange="calculate();"></td>
+  <td rowspan=8>
+    <canvas id="graph" width="400" height="250"></canvas></td></tr>
+  <tr><td>Annual interest (%):</td>
+    <td><input id="apr" onchange="calculate();"></td></tr>
+  <tr><td>Repayment period (years):</td>
+    <td><input id="years" onchange="calculate();"></td>
+  <tr><td>Subsidy :</td>
+    <td><input id="zipcode" onchange="calculate();"></td>
+  <tr><th>Approximate Payments:</th>
+    <td><button onclick="calculate();">Calculate</button></td></tr>
+  <tr><td>Monthly payment:</td>
+    <td>Rs<span class="output" id="payment"></span></td></tr>
+  <tr><td>Total payment:</td>
+    <td>Rs<span class="output" id="total"></span></td></tr>
+  <tr><td>Total interest:</td>
+    <td>Rs<span class="output" id="totalinterest"></span></td></tr>
+  <tr><th>Sponsors:</th><td colspan=2>
+    Apply for your loan with one of these fine lenders:
+      <div id="lenders"></div></td></tr>
+  </table>
+    </div>-->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Team Guerrero 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

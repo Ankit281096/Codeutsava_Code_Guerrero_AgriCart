@@ -5,10 +5,9 @@ var Cart = require('../models/cart');
 var Product = require('../models/product');
 var Order = require('../models/order');
 
-router.get('/', function(req, res){
- res.sendFile(__dirname + './public/index.html');
+router.get('/', function(req, res) {
+  res.sendFile(__dirname + './public/index.html');
 });
-
 
 /* GET home page. */
 router.get('/home', function(req, res, next) {
@@ -20,7 +19,7 @@ router.get('/home', function(req, res, next) {
       productChunks.push(docs.slice(i, i + chunkSize));
     }
     res.render('shop/index', {
-      title: 'Shopping Cart',
+      title: 'CART',
       products: productChunks,
       successMsg,
       noMessages: !successMsg
