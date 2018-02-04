@@ -25,10 +25,10 @@ router.get('/profile', isLoggedIn, function(req, res, next) {
 
 router.get('/logout', isLoggedIn, function(req, res, next) {
   req.logout();
-  res.redirect('/');
+  res.redirect('/home');
 });
 
-router.use('/', notLoggedIn, function(req, res, next) {
+router.use('/home', notLoggedIn, function(req, res, next) {
   next();
 });
 
@@ -90,12 +90,12 @@ function isLoggedIn(req, res, next) {
   if (req.isAuthenticated()) {
     return next();
   }
-  res.redirect('/');
+  res.redirect('/home');
 }
 
 function notLoggedIn(req, res, next) {
   if (!req.isAuthenticated()) {
     return next();
   }
-  res.redirect('/');
+  res.redirect('/home');
 }
