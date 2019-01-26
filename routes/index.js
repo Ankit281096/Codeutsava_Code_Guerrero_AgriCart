@@ -3,14 +3,18 @@ var router = express.Router();
 var Cart = require('../models/cart');
 
 var Product = require('../models/product');
+var Product_Craft =  require('../models/product_craft');
+var Course = require('../models/course');
 var Order = require('../models/order');
+var flag=0;
 
 router.get('/', function(req, res) {
   res.sendFile(__dirname + './public/index.html');
 });
 
 /* GET home page. */
-router.get('/home', function(req, res, next) {
+router.get('/product', function(req, res, next) {
+  flag=0;
   var successMsg = req.flash('success')[0];
   Product.find(function(err, docs) {
     var productChunks = [];
@@ -27,19 +31,81 @@ router.get('/home', function(req, res, next) {
   });
 });
 
+router.get('/product_craft', function(req, res, next) {
+  flag=1;
+  var successMsg = req.flash('success')[0];
+  Product_Craft.find(function(err, docs) {
+    var productChunks = [];
+    var chunkSize = 3;
+    for (var i = 0; i < docs.length; i += chunkSize) {
+      productChunks.push(docs.slice(i, i + chunkSize));
+    }
+    res.render('shop/index', {
+      title: 'CART',
+      products: productChunks,
+      successMsg,
+      noMessages: !successMsg
+    });
+  });
+});
+
+router.get('/course', function(req, res, next) {
+  flag=2;
+  var successMsg = req.flash('success')[0];
+  Course.find(function(err, docs) {
+    var productChunks = [];
+    var chunkSize = 3;
+    for (var i = 0; i < docs.length; i += chunkSize) {
+      productChunks.push(docs.slice(i, i + chunkSize));
+    }
+    res.render('shop/index', {
+      title: 'CART',
+      products: productChunks,
+      successMsg,
+      noMessages: !successMsg
+    });
+  });
+});
+
+
 router.get('/add-to-cart/:id', function(req, res, next) {
   var productId = req.params.id;
   var cart = new Cart(req.session.cart ? req.session.cart : {});
+  if (flag==0){
+    Product.findById(productId, function(err, product) {
+      if (err) {
+        return res.redirect('/product');
+      }
+      cart.add(product, product.id);
+      req.session.cart = cart;
+      console.log(req.session.cart);
+      res.redirect('/product');
+    });
+  }
 
-  Product.findById(productId, function(err, product) {
-    if (err) {
-      return res.redirect('/home');
-    }
-    cart.add(product, product.id);
-    req.session.cart = cart;
-    console.log(req.session.cart);
-    res.redirect('/home');
-  });
+  else if(flag==1){
+    Product_Craft.findById(productId, function(err, product) {
+      if (err) {
+        return res.redirect('/product_craft');
+      }
+      cart.add(product, product.id);
+      req.session.cart = cart;
+      console.log(req.session.cart);
+      res.redirect('/product_craft');
+    });
+  }
+
+  else{
+    Course.findById(productId, function(err, product) {
+      if (err) {
+        return res.redirect('/product_craft');
+      }
+      cart.add(product, product.id);
+      req.session.cart = cart;
+      console.log(req.session.cart);
+      res.redirect('/course');
+    });
+  }
 });
 
 router.get('/reduce/:id', function(req, res, next) {
@@ -110,7 +176,7 @@ router.post('/checkout', isLoggedIn, function(req, res, next) {
       order.save(function(err, result) {
         req.flash('success', 'Successfully bought product!');
         req.session.cart = null;
-        res.redirect('/home');
+        res.redirect('/product');
       });
     }
   );
