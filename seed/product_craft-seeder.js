@@ -7,54 +7,54 @@ var products = [
     imagePath:
       'https://i.ibb.co/8KMpbTn/3.jpg',
     title:
-      'SGK Products, Neem Oil Cake (Powder), 100% Organic Fertilizer, 2Kg Bag ',
+      'Earthern Face Vase',
     description:
-      'Neem Oil Cake organic manure is the by-product obtained in the process of cold pressing of Neem tree fruits and kernels. It doesnt create "death zones" as other insecticides can. Rich micronutrient content such as Nitrogen, Potassium, Sulphur, Magnesium, Phosphorus, Zinc, Calcium, Copper, Iron and Manganese can enhance the plant immunity and the growth of high yield crops.',
-    price: 429
+      'Earthern Face Vase is the by-product obtained in the process of cold pressing of Neem tree fruits and kernels. It doesnt create "death zones" as other insecticides can. Rich micronutrient content such as Nitrogen, Potassium, Sulphur, Magnesium, Phosphorus, Zinc, Calcium, Copper, Iron and Manganese can enhance the plant immunity and the growth of high yield crops.',
+    price: 500
   }),
   new Product_Craft({
     imagePath:
       'https://i.ibb.co/JKB5xq4/2.jpg',
     title:
-      'SGK Products, Neem Oil Cake (Powder), 100% Organic Fertilizer, 2Kg Bag ',
+      'Decorative Earthern Pot (Blue)',
     description:
-      'Neem Oil Cake organic manure is the by-product obtained in the process of cold pressing of Neem tree fruits and kernels. It doesnt create "death zones" as other insecticides can. Rich micronutrient content such as Nitrogen, Potassium, Sulphur, Magnesium, Phosphorus, Zinc, Calcium, Copper, Iron and Manganese can enhance the plant immunity and the growth of high yield crops.',
-    price: 429
+      'Decorative Earthern Pot  is the by-product obtained in the process of cold pressing of Neem tree fruits and kernels. It doesnt create "death zones" as other insecticides can. Rich micronutrient content such as Nitrogen, Potassium, Sulphur, Magnesium, Phosphorus, Zinc, Calcium, Copper, Iron and Manganese can enhance the plant immunity and the growth of high yield crops.',
+    price: 250
   }),
   new Product_Craft({
     imagePath:
       'https://i.ibb.co/ZB6R9zZ/1.jpg',
     title:
-      'SGK Products, Neem Oil Cake (Powder), 100% Organic Fertilizer, 2Kg Bag ',
+      'Bastar Art Painting (Madhubani)',
     description:
-      'Neem Oil Cake organic manure is the by-product obtained in the process of cold pressing of Neem tree fruits and kernels. It doesnt create "death zones" as other insecticides can. Rich micronutrient content such as Nitrogen, Potassium, Sulphur, Magnesium, Phosphorus, Zinc, Calcium, Copper, Iron and Manganese can enhance the plant immunity and the growth of high yield crops.',
-    price: 429
+      'Bastar Art Painting is the by-product obtained in the process of cold pressing of Neem tree fruits and kernels. It doesnt create "death zones" as other insecticides can. Rich micronutrient content such as Nitrogen, Potassium, Sulphur, Magnesium, Phosphorus, Zinc, Calcium, Copper, Iron and Manganese can enhance the plant immunity and the growth of high yield crops.',
+    price: 3500
   }),
   new Product_Craft({
     imagePath:
       'https://i.ibb.co/PrnF5X0/4.jpg',
     title:
-      'SGK Products, Neem Oil Cake (Powder), 100% Organic Fertilizer, 2Kg Bag ',
+      'Scenic Monsoon Painting',
     description:
-      'Neem Oil Cake organic manure is the by-product obtained in the process of cold pressing of Neem tree fruits and kernels. It doesnt create "death zones" as other insecticides can. Rich micronutrient content such as Nitrogen, Potassium, Sulphur, Magnesium, Phosphorus, Zinc, Calcium, Copper, Iron and Manganese can enhance the plant immunity and the growth of high yield crops.',
-    price: 429
+      'Scenic Monsoon Painting is the by-product obtained in the process of cold pressing of Neem tree fruits and kernels. It doesnt create "death zones" as other insecticides can. Rich micronutrient content such as Nitrogen, Potassium, Sulphur, Magnesium, Phosphorus, Zinc, Calcium, Copper, Iron and Manganese can enhance the plant immunity and the growth of high yield crops.',
+    price: 3000
   }),
   new Product_Craft({
     imagePath:
       'https://i.ibb.co/87CFL02/5.jpg',
     title:
-      'SGK Products, Neem Oil Cake (Powder), 100% Organic Fertilizer, 2Kg Bag ',
+      'Lord BUDDHA Abstract Blue Canvas Painting',
     description:
-      'Neem Oil Cake organic manure is the by-product obtained in the process of cold pressing of Neem tree fruits and kernels. It doesnt create "death zones" as other insecticides can. Rich micronutrient content such as Nitrogen, Potassium, Sulphur, Magnesium, Phosphorus, Zinc, Calcium, Copper, Iron and Manganese can enhance the plant immunity and the growth of high yield crops.',
-    price: 429
+      'Lord BUDDHA Abstract Blue Canvas Painting is by-product obtained in the process of cold pressing of Neem tree fruits and kernels. It doesnt create "death zones" as other insecticides can. Rich micronutrient content such as Nitrogen, Potassium, Sulphur, Magnesium, Phosphorus, Zinc, Calcium, Copper, Iron and Manganese can enhance the plant immunity and the growth of high yield crops.',
+    price: 4500
   }),
   new Product_Craft({
     imagePath:
       'https://i.ibb.co/mTzFkp4/6.jpg',
     title:
-      'SGK Products, Neem Oil Cake (Powder), 100% Organic Fertilizer, 2Kg Bag ',
+      'Combo Decorative Flower Vases',
     description:
-      'Neem Oil Cake organic manure is the by-product obtained in the process of cold pressing of Neem tree fruits and kernels. It doesnt create "death zones" as other insecticides can. Rich micronutrient content such as Nitrogen, Potassium, Sulphur, Magnesium, Phosphorus, Zinc, Calcium, Copper, Iron and Manganese can enhance the plant immunity and the growth of high yield crops.',
+      'Flower Decorative Vases is the by-product obtained in the process of cold pressing of Neem tree fruits and kernels. It doesnt create "death zones" as other insecticides can. Rich micronutrient content such as Nitrogen, Potassium, Sulphur, Magnesium, Phosphorus, Zinc, Calcium, Copper, Iron and Manganese can enhance the plant immunity and the growth of high yield crops.',
     price: 429
   })
 ];
