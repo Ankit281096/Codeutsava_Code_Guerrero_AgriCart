@@ -1,9 +1,17 @@
 .thumbnail img {
   max-height: 150px;
+  background-color: azure;
+  /* max-width: 500 px; */
 }
 
+.caption {
+  background-image: linear-gradient(to bottom right,rgba(166,233,249,0.5), rgba(253,147,63,0.5));
+  border-radius: 5px;
+  border-color: blue;
+  /* height: 500px; */
+}
 .thumbnail .description {
-  color: #7f7f7f;
+  color: black;
 }
 
 .price {
@@ -12,5 +20,6 @@
 }
 
 body {
-  background-color: #ffe6cc;
+  font-family: 'Poppins';
+  background-color: white;
 }
